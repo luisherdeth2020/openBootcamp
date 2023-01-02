@@ -37,7 +37,6 @@ console.log(factorialWhile(4));
  *
  *========================**/
 
-// console.log(valor);
 function getFactorialByStatement(num) {
 	let i = 1;
 	let valor = 1;
