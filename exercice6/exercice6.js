@@ -26,13 +26,8 @@ const favoriteList  = [
 		date   : new Date('2007,25,03'),
 	},
 ];
-const later    = favoriteList.filter((obj) => obj.date > 2010);
-const managers = favoriteList.map((name) => name.manager);
-
-const movies = favoriteList.map((movie) => movie.title);
-
+const later             = favoriteList.filter((obj) => obj.date > 2010);
+const managers          = favoriteList.map((name) => name.manager);
+const movies            = favoriteList.map((movie) => movie.title);
 const listManagerTitle1 = managers.concat(movies);
-console.log(listManagerTitle1);
-
 const listManagerTitle2 = [...managers, ...movies];
-console.log(listManagerTitle2);
