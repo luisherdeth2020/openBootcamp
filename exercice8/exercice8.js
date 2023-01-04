@@ -19,24 +19,20 @@ setTimeout(() => {
 
 // - Una función generadora de índices pares automáticos
 
-function* generaId() {
+function* generaId(i) {
 	let id = 0;
-	// while(i %2 ==0){
-	//     yield id++
-	// }
-	let generador = 4;
-	while (true) {
-		id++;
 
-		console.log(id);
-
-		if (generador % 2 == 0 && id < generador) {
-			return id;
-		}
-		yield id;
+	for (let k = 2; k <= i; k + 2) {
+		yield k;
 	}
 }
 
-const gen = generaId();
+const gen = generaId(6);
 
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
 console.log(gen.next().value);
