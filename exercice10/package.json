@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "chalk": "^5.2.0"
+  },
+  "name": "exercice10",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type":"module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "start index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
